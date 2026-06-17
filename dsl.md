@@ -39,15 +39,15 @@
 
 ## Abstract
 
-This document proposes the creation of a Domain Specific Language (DSL) called Open Workflow, designed for building platform agnostic workflows. 
+This document proposes the creation of a Domain Specific Language (DSL) for the Open Workflow Specification, designed for building platform agnostic workflows. 
 
-Open Workflow aims to simplify the orchestration of complex processes across diverse environments, providing developers with a unified syntax and set of tools for defining and executing workflows.
+Open Workflow Specification aims to simplify the orchestration of complex processes across diverse environments, providing developers with a unified syntax and set of tools for defining and executing workflows.
 
 ## Motivation
 
 Modern cloud-native computing has gained popularity for its ability to abstract away infrastructure management tasks, enabling developers to focus on application logic. However, orchestrating workflows across multiple environments often involves dealing with disparate tools and platforms, leading to complexity and inefficiency.
 
-Open Workflow addresses this challenge by providing a DSL specifically designed for workflow orchestration. By abstracting away the underlying infrastructure complexities and offering a modular and extensible framework, Open Workflow aims to streamline the development, deployment, and management of workflows.
+Open Workflow Specification addresses this challenge by providing a DSL specifically designed for workflow orchestration. By abstracting away the underlying infrastructure complexities and offering a modular and extensible framework, Open Workflow Specification aims to streamline the development, deployment, and management of workflows.
 
 ## Priority of Constituencies
 
@@ -56,7 +56,7 @@ Inspired by the [Priority of Constituencies](https://www.w3.org/TR/2024/NOTE-des
 - Authors: people authoring and reading workflows
 - Operators: people running and operating a runtime implementation of the specification
 - Implementors: people implementing a specification compliant runtime
-- Specifications writers: people working on the specifications of Open Workflow
+- Specifications writers: people working on the Open Workflow Specification
 
 If a trade-off needs to be made, always put author's needs above all.
 
@@ -86,7 +86,7 @@ Moreover, the DSL eschews strong-typed enumerations wherever feasible, fostering
 
 ### Workflow
 
-An Open Workflow is a sequence of specific [tasks](dsl-reference.md#tasks) that are executed in a defined order. By default, this order follows the declaration sequence within the workflow definition. Workflows are designed to automate processes and orchestrate various functions and services. 
+A workflow defined using the Open Workflow Specification is a sequence of specific [tasks](dsl-reference.md#tasks) that are executed in a defined order. By default, this order follows the declaration sequence within the workflow definition. Workflows are designed to automate processes and orchestrate various functions and services. 
 
 Workflows can be triggered in different ways: upon request, scheduled using CRON expressions, or initiated upon correlation with specific events. 
 
@@ -460,13 +460,13 @@ The following table shows which arguments are available for each runtime express
 
 ### Fault Tolerance
 
-Open Workflow is designed with resilience in mind, acknowledging that errors are an inevitable part of any system. The DSL provides robust mechanisms to identify, describe, and handle errors effectively, ensuring the workflow can recover gracefully from failures.
+Open Workflow Specification is designed with resilience in mind, acknowledging that errors are an inevitable part of any system. The DSL provides robust mechanisms to identify, describe, and handle errors effectively, ensuring the workflow can recover gracefully from failures.
 
-Overall, the fault tolerance features in Open Workflow enhance its robustness and reliability, making it capable of handling a wide range of failure scenarios gracefully and effectively.
+Overall, the fault tolerance features in Open Workflow Specification enhance its robustness and reliability, making it capable of handling a wide range of failure scenarios gracefully and effectively.
 
 #### Errors
 
-Errors in Open Workflow are described using the [Problem Details RFC](https://datatracker.ietf.org/doc/html/rfc7807). This specification helps to standardize the way errors are communicated, using the `instance` property as a [JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901) to identify the specific component of the workflow that has raised the error. By adhering to this standard, authors and runtimes can consistently describe and handle errors.
+Errors in Open Workflow Specification are described using the [Problem Details RFC](https://datatracker.ietf.org/doc/html/rfc7807). This specification helps to standardize the way errors are communicated, using the `instance` property as a [JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901) to identify the specific component of the workflow that has raised the error. By adhering to this standard, authors and runtimes can consistently describe and handle errors.
 
 *Example error:*
 ```yaml
@@ -477,7 +477,7 @@ detail: The service is currently unavailable. Please try again later.
 instance: /do/getPetById
 ```
 
-The Open Workflow specification defines several [standard error types](dsl-reference.md#standard-error-types) to describe commonly known errors, such as timeouts. Using these standard error types ensures that workflows behave consistently across different runtimes, and allows authors to rely on predictable error handling and recovery processes.
+The Open Workflow Specification defines several [standard error types](dsl-reference.md#standard-error-types) to describe commonly known errors, such as timeouts. Using these standard error types ensures that workflows behave consistently across different runtimes, and allows authors to rely on predictable error handling and recovery processes.
 
 See the [DSL reference](dsl-reference.md#error) for more details about errors.
 
@@ -691,7 +691,7 @@ For detailed instructions on how to contribute your custom function, please refe
 
 Events play a crucial role in Open Workflow by facilitating communication and coordination between different components and services. They enable workflows to react to external stimuli, paving the way for event-driven architectures and real-time processing scenarios. Events are essentially messages that convey information about a specific occurrence or action, allowing workflows to respond dynamically to changes in their environment.
 
-Events in Open Workflow adhere to the [Cloud Events specification](https://cloudevents.io/), ensuring interoperability and compatibility with event-driven systems. This standardization allows workflows to seamlessly interact with various event sources and consumers across different platforms and environments.
+Events in Open Workflow adhere to the [CloudEvents specification](https://cloudevents.io/), ensuring interoperability and compatibility with event-driven systems. This standardization allows workflows to seamlessly interact with various event sources and consumers across different platforms and environments.
 
 #### Emitting Events
 
@@ -729,7 +729,7 @@ Extensions are defined with properties such as `extend`, `when`, `before`, and `
 - **`before`**: Executes tasks before the extended task.
 - **`after`**: Executes tasks after the extended task completes.
 
-Overall, extensions empower developers to build complex workflows with enhanced functionality and maintainability, making Open Workflow a powerful tool for orchestrating cloud-native applications.
+Overall, extensions empower developers to build complex workflows with enhanced functionality and maintainability, making Open Workflow Specification a powerful tool for orchestrating cloud-native applications.
 
 See the [DSL reference](dsl-reference.md#extension) for more details about extensions.
 
@@ -782,7 +782,7 @@ By defining external resources within the workflow, you centralize resource mana
 
 Authentication in Open Workflow specifies the method by which the workflow accesses protected resources or services.
 
-Amonst others, [external resources](dsl-reference.md#external-resource) and [calls](dsl-reference.md#call) may define authentication.
+Among others, [external resources](dsl-reference.md#external-resource) and [calls](dsl-reference.md#call) may define authentication.
 
 The Open Workflow DSL supports a suite of standard authentication mechanisms, amongst which are:
 

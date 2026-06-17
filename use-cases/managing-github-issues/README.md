@@ -4,7 +4,7 @@
 
 ### System
 
-The system is a GitHub-based issue management workflow designed to automate the lifecycle of an issue. It leverages Open Workflow (SW) DSL to handle various stages, from assignment and development to review and closure.
+The system is a GitHub-based issue management workflow designed to automate the lifecycle of an issue. It leverages Open Workflow DSL to handle various stages, from assignment and development to review and closure.
 
 ### Actors
 

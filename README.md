@@ -29,7 +29,7 @@
 
 ## About
 
-Open Workflow presents a vendor-neutral, open-source, and entirely community-driven ecosystem for defining and executing DSL-based workflows. 
+Open Workflow Specification presents a vendor-neutral, open-source, and entirely community-driven ecosystem for defining and executing DSL-based workflows. 
 
 The Open Workflow DSL is a high-level language that reshapes the terrain of workflow creation, boasting a design that is ubiquitous, intuitive, imperative, and fluent. 
 
@@ -39,7 +39,7 @@ Key features:
 
 - **Easy to Use**: Designed for universal understanding, Open Workflow DSL enables users to quickly grasp workflow concepts and create complex workflows effortlessly.
 - **Event Driven**: Seamlessly integrate events into workflows with support for various formats, including CloudEvents, allowing for event-driven workflow architectures.
-- **Service Oriented**: The Open Workflow DSL empowers developers to seamlessly integrate with service-oriented architectures, allowing them to define workflows that interact with various services over standard application protocols like HTTP, GRPC, OpenAPI, AxsyncAPI, and more.
+- **Service Oriented**: The Open Workflow DSL empowers developers to seamlessly integrate with service-oriented architectures, allowing them to define workflows that interact with various services over standard application protocols like HTTP, GRPC, OpenAPI, AsyncAPI, and more.
 - **FaaS Centric**: Seamlessly invoke functions hosted on various platforms within workflows, promoting a function-as-a-service (FaaS) paradigm and enabling microservices architectures.
 - **Timely**: Define timeouts for workflows and tasks to manage execution duration effectively.
 - **Fault Tolerant**: Easily define error handling strategies to manage and recover from errors that may occur during workflow execution, ensuring robustness and reliability.
@@ -50,26 +50,26 @@ Key features:
 
 ## Ecosystem
 
-Open Workflow ecosystem is hosted by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) and was approved as a
+Open Workflow Specification ecosystem is hosted by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) and was approved as a
 Cloud Native Sandbox level project on July 14, 2020.
 
 It encompasses a comprehensive suite of components and tools designed to facilitate the creation, management, and execution of workflows. 
 
-1. **[DSL](dsl.md) (Domain Specific Language)**: The core of the ecosystem, defining the fundamental syntax and semantics of Open Workflow specifications.
+1. **[DSL](dsl.md) (Domain Specific Language)**: The core of the ecosystem, defining the fundamental syntax and semantics of the Open Workflow Specification.
 
 2. **[CTK](/ctk/README.md) (Conformance Test Kit)**: A set of Gherkin features utilized for both conformance testing and Behavior Driven Design (BDD), ensuring compliance and facilitating testing across implementations.
 
-3. **[SDKs](#sdks) (Software Development Kits)**: These enable developers to interact with serverless workflows in various programming languages, providing functionalities such as reading, writing, building, and validating workflows.
+3. **[SDKs](#sdks) (Software Development Kits)**: These enable developers to interact with workflows in various programming languages, providing functionalities such as reading, writing, building, and validating workflows.
 
 4. **[Runtimes](#runtimes)**: Dedicated environments for executing workflows defined using the Open Workflow DSL, ensuring seamless deployment and operation within diverse runtime environments.
 
-5. **[Tooling](#tooling)**: Additional utilities and resources tailored to enhance the development, debugging, and management of serverless workflows, streamlining the workflow lifecycle from creation to deployment and maintenance.
+5. **[Tooling](#tooling)**: Additional utilities and resources tailored to enhance the development, debugging, and management of workflows, streamlining the workflow lifecycle from creation to deployment and maintenance.
 
 ### SDKs
 
-The Open Workflow SDKs are essential tools designed to assist developers in consuming, parsing, validating, and testing their workflows utilizing the Open Workflow DSL.
+The Open Workflow Specification SDKs are essential tools designed to assist developers in consuming, parsing, validating, and testing their workflows utilizing the Open Workflow DSL.
 
-These SDKs empower developers to seamlessly integrate serverless workflows into their applications, providing robust support for various programming languages. By offering comprehensive functionality, they streamline the development process and enhance workflow management.
+These SDKs empower developers to seamlessly integrate workflows into their applications, providing robust support for various programming languages. By offering comprehensive functionality, they streamline the development process and enhance workflow management.
 
 Explore our SDKs for different programming languages:
 
@@ -92,7 +92,7 @@ No matter your preferred language, our SDKs provide the tools you need to levera
 | [Apache KIE SonataFlow](https://sonataflow.org) | Apache KIE SonataFlow is a tool for building cloud-native workflow applications. You can use it to do the services and events orchestration and choreography. |
 | [Java SDK reference implementation](https://github.com/serverlessworkflow/sdk-java/tree/main/impl) | Full compliant Java implementation of the specification |
 | [Lemline](https://github.com/lemline/lemline) | Lemline is a highly scalable runtime running on top of your existing messaging infrastructure. |
-| [Synapse](https://github.com/serverlessworkflow/synapse) | Synapse is a scalable, cross-platform, fully customizable platform for managing and running Open Workflows. |
+| [Synapse](https://github.com/serverlessworkflow/synapse) | Synapse is a scalable, cross-platform, fully customizable platform for managing and running workflows defined with Open Workflow Specification. |
 
 ### Tooling
 
@@ -102,7 +102,7 @@ The sources of the extension can be found [here](https://github.com/serverlesswo
 
 ### CNCF Landscape
 
-Open Workflow project falls under the [CNCF "App Definition and Development"](https://landscape.cncf.io/card-mode?category=app-definition-and-development&grouping=category) category.
+Open Workflow Specification project falls under the [CNCF "App Definition and Development"](https://landscape.cncf.io/card-mode?category=app-definition-and-development&grouping=category) category.
 
 It is a member project of the [CNCF Serverless Working Group](https://github.com/cncf/wg-serverless).
 
@@ -112,13 +112,13 @@ It is a member project of the [CNCF Serverless Working Group](https://github.com
 
 ## Documentation
 
-The documentation for Open Workflow includes:
+The documentation for Open Workflow Specification includes:
 
 - [**DSL**](dsl.md): Documents the fundamentals aspects and concepts of the Open Workflow DSL.
 - [**DSL Reference**](dsl-reference.md): References all the definitions used by the Open Workflow DSL.
-- [**Comparison**](comparison.md): See how Open Workflow compares to other DSLs.
-- [**Examples**](./examples/README.md): A collection of practical examples demonstrating specific features and functionalities of Open Workflow.
-- [**Use Cases**](./use-cases/README.md): Detailed use cases illustrating how Open Workflow can be applied in various real-world scenarios.
+- [**Comparison**](comparison.md): See how Open Workflow Specification compares to other DSLs.
+- [**Examples**](./examples/README.md): A collection of practical examples demonstrating specific features and functionalities of Open Workflow Specification.
+- [**Use Cases**](./use-cases/README.md): Detailed use cases illustrating how Open Workflow Specification can be applied in various real-world scenarios.
 
 ## Community
 
@@ -142,7 +142,7 @@ reference the [Ownership of Copyrights in CNCF Project Contributions](https://gi
 
 ### Governance
 
-The Open Workflow Project Governance [document](governance.md) delineates the roles, procedures, and principles guiding the collaborative development and maintenance of the project. 
+The Open Workflow Specification Project Governance [document](governance.md) delineates the roles, procedures, and principles guiding the collaborative development and maintenance of the project. 
 
 It emphasizes adherence to the CNCF Code of Conduct, defines the responsibilities of maintainers, reviewers, and emeritus maintainers, outlines procedures for their addition and removal, and establishes guidelines for subprojects' inclusion and compliance.
 
@@ -168,7 +168,7 @@ See the project's Code of Conduct [here](code-of-conduct.md).
 
 ### Weekly Meetings
 
-The Open Workflow team meets weekly, every Thursday at 9AM ET (USA Eastern Time).
+The Open Workflow Specification team meets weekly, every Thursday at 9AM ET (USA Eastern Time).
 
 To register for meetings please visit the [CNCF Community Calendar](https://tockify.com/cncf.public.events/monthly?search=serverless%20workflow).
 
@@ -178,11 +178,11 @@ You can register for individual meetings or for the entire series.
 
 ### Adoption
 
-If you're using Open Workflow in your projects and would like to showcase your adoption, become an Adopter! By joining our community of adopters, you'll have the opportunity to share your experiences, contribute feedback, and collaborate with like-minded individuals and organizations leveraging Open Workflow to power their workflows.
+If you're using Open Workflow Specification in your projects and would like to showcase your adoption, become an Adopter! By joining our community of adopters, you'll have the opportunity to share your experiences, contribute feedback, and collaborate with like-minded individuals and organizations leveraging Open Workflow Specification to power their workflows.
 
 ### Sponsoring
 
-As an open-source project, Open Workflow relies on the support of sponsors to sustain its development and growth. 
+As an open-source project, Open Workflow Specification relies on the support of sponsors to sustain its development and growth. 
 
 By becoming a sponsor, you'll not only demonstrate your commitment to advancing serverless technologies but also gain visibility within our vibrant community. 
 

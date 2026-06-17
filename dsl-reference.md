@@ -316,7 +316,7 @@ do:
         endpoint: https://petstore.swagger.io/v2/pet/{petId}
 ```
 
-Open Workflow defines several default functions that **MUST** be supported by all implementations and runtimes:
+Open Workflow Specification defines several default functions that **MUST** be supported by all implementations and runtimes:
 
 - [AsyncAPI](#asyncapi-call)
 - [gRPC](#grpc-call)
@@ -965,7 +965,7 @@ do:
 > [!NOTE]
 > When a `container process` is executed, runtime implementations are recommended to follow a predictable naming convention for the container name. This can improve monitoring, logging, and container lifecycle management.
 >
-> The Open Workflow specification recommends using the following convention: `{workflow.name}-{uuid}.{workflow.namespace}-{task.name}`
+> The Open Workflow Specification recommends using the following convention: `{workflow.name}-{uuid}.{workflow.namespace}-{task.name}`
 
 ##### Script Process
 
@@ -984,7 +984,7 @@ Enables the execution of custom scripts or code within a workflow, empowering wo
 
 
 > [!WARNING]
-> To ensure cross-compatibility, Open Workflow strictly limits the versions of supported scripting languages. These versions may evolve with future releases. If you wish to use a different version of a language, you may do so by utilizing the [`container process`](#container-process).
+> To ensure cross-compatibility, Open Workflow Specification strictly limits the versions of supported scripting languages. These versions may evolve with future releases. If you wish to use a different version of a language, you may do so by utilizing the [`container process`](#container-process).
 
 **Supported languages**
 | Language | Version |
@@ -2132,7 +2132,7 @@ Represents the configuration of an event consumption strategy.
 
 ### Event Properties
 
-An event object typically includes details such as the event type, source, timestamp, and unique identifier along with any relevant data payload. The [Cloud Events specification](https://cloudevents.io/), favored by Open Workflow, standardizes this structure to ensure interoperability across different systems and services.
+An event object typically includes details such as the event type, source, timestamp, and unique identifier along with any relevant data payload. The [CloudEvents specification](https://cloudevents.io/), favored by Open Workflow Specification, standardizes this structure to ensure interoperability across different systems and services.
 
 #### Properties
 
@@ -2147,7 +2147,7 @@ An event object typically includes details such as the event type, source, times
 | dataschema | `string` | `no` | An URI formatted string, or [runtime expression](dsl.md#runtime-expressions), that identifies the schema that `data` adheres to. |
 | data | `any` | `no` | The event payload. |
 
-*Additional properties can be supplied, see the Cloud Events specification [documentation](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#extension-context-attributes) for more info.*
+*Additional properties can be supplied, see the CloudEvents specification [documentation](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md#extension-context-attributes) for more info.*
 
 *When used in an [`eventFilter`](#event-filter), at least one property must be supplied.*
 
