@@ -47,4 +47,4 @@ Each use case in this directory MUST follow a specific structure to ensure clari
 
 We invite everyone to submit their own use cases to enrich this directory and help others learn from their experiences. 
 
-If you would like to contribute, please refer to the [contributing.md](./contributing.md) for guidelines on how to contribute to the Open Workflow project.
+If you would like to contribute, please refer to the [contributing.md](../contributing.md) for guidelines on how to contribute to the Open Workflow Specification project.
