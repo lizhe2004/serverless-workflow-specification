@@ -1,4 +1,4 @@
-# Serverless Workflow DSL - Reference
+# Open Workflow DSL - Reference
 
 ## Table of Contents
 
@@ -88,7 +88,7 @@
 
 ## Abstract
 
-This document provides comprehensive definitions and detailed property tables for all the concepts discussed in the Serverless Workflow DSL. It serves as a reference guide, explaining the structure, components, and configurations available within the DSL. By exploring this document, users will gain a thorough understanding of how to define, configure, and manage workflows, including task definitions, flow directives, and state transitions. This foundational knowledge will enable users to effectively utilize the DSL for orchestrating serverless functions and automating processes.
+This document provides comprehensive definitions and detailed property tables for all the concepts discussed in the Open Workflow DSL. It serves as a reference guide, explaining the structure, components, and configurations available within the DSL. By exploring this document, users will gain a thorough understanding of how to define, configure, and manage workflows, including task definitions, flow directives, and state transitions. This foundational knowledge will enable users to effectively utilize the DSL for orchestrating functions and automating processes.
 
 ## Definitions
 
@@ -262,7 +262,7 @@ It encapsulates a specific action or set of actions that need to be executed in 
 
 By breaking down the [workflow](#workflow) into manageable [tasks](#task), organizations can effectively coordinate and track progress, enabling efficient collaboration and ensuring that work is completed in a structured and organized manner.
 
-The Serverless Workflow DSL defines a list of [tasks](#task) that **must be** supported by all runtimes:
+The Open Workflow DSL defines a list of [tasks](#task) that **must be** supported by all runtimes:
 
 - [Call](#call), used to call services and/or functions.
 - [Do](#do), used to define one or more subtasks to perform in sequence.
@@ -316,7 +316,7 @@ do:
         endpoint: https://petstore.swagger.io/v2/pet/{petId}
 ```
 
-Serverless Workflow defines several default functions that **MUST** be supported by all implementations and runtimes:
+Open Workflow defines several default functions that **MUST** be supported by all implementations and runtimes:
 
 - [AsyncAPI](#asyncapi-call)
 - [gRPC](#grpc-call)
@@ -965,7 +965,7 @@ do:
 > [!NOTE]
 > When a `container process` is executed, runtime implementations are recommended to follow a predictable naming convention for the container name. This can improve monitoring, logging, and container lifecycle management.
 >
-> The Serverless Workflow specification recommends using the following convention: `{workflow.name}-{uuid}.{workflow.namespace}-{task.name}`
+> The Open Workflow specification recommends using the following convention: `{workflow.name}-{uuid}.{workflow.namespace}-{task.name}`
 
 ##### Script Process
 
@@ -984,7 +984,7 @@ Enables the execution of custom scripts or code within a workflow, empowering wo
 
 
 > [!WARNING]
-> To ensure cross-compatibility, Serverless Workflow strictly limits the versions of supported scripting languages. These versions may evolve with future releases. If you wish to use a different version of a language, you may do so by utilizing the [`container process`](#container-process).
+> To ensure cross-compatibility, Open Workflow strictly limits the versions of supported scripting languages. These versions may evolve with future releases. If you wish to use a different version of a language, you may do so by utilizing the [`container process`](#container-process).
 
 **Supported languages**
 | Language | Version |
@@ -1964,7 +1964,7 @@ A **resource catalog** is an external collection of reusable components, such as
 
 Each catalog is defined by an `endpoint` property, specifying the root URL where the resources are hosted, enabling workflows to access external functions and services. For portability, catalogs must adhere to a specific file structure, as defined [here](https://github.com/serverlessworkflow/catalog?tab=readme-ov-file#structure).
 
-For more information about catalogs, refer to the [Serverless Workflow DSL document](https://github.com/serverlessworkflow/specification/blob/main/dsl.md#catalogs).
+For more information about catalogs, refer to the [Open Workflow DSL document](https://github.com/serverlessworkflow/specification/blob/main/dsl.md#catalogs).
 
 #### Properties
 
@@ -2132,7 +2132,7 @@ Represents the configuration of an event consumption strategy.
 
 ### Event Properties
 
-An event object typically includes details such as the event type, source, timestamp, and unique identifier along with any relevant data payload. The [Cloud Events specification](https://cloudevents.io/), favored by Serverless Workflow, standardizes this structure to ensure interoperability across different systems and services.
+An event object typically includes details such as the event type, source, timestamp, and unique identifier along with any relevant data payload. The [Cloud Events specification](https://cloudevents.io/), favored by Open Workflow, standardizes this structure to ensure interoperability across different systems and services.
 
 #### Properties
 
@@ -2176,7 +2176,7 @@ A correlation is a link between events and data, established by mapping event at
 
 ### Retry
 
-The Retry is a fundamental concept in the Serverless Workflow DSL, used to define the strategy for retrying a failed task when an error is encountered during execution. This policy provides developers with fine-grained control over how and when to retry failed tasks, enabling robust error handling and fault tolerance within workflows.
+The Retry is a fundamental concept in the Open Workflow DSL, used to define the strategy for retrying a failed task when an error is encountered during execution. This policy provides developers with fine-grained control over how and when to retry failed tasks, enabling robust error handling and fault tolerance within workflows.
 
 #### Properties
 

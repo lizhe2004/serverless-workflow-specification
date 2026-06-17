@@ -1,6 +1,6 @@
 # Community Contributors
 
-This list acknowledges community contributors to the Serverless Workflow 
+This list acknowledges community contributors to the Open Workflow 
 project. 
 
 We welcome everyone to join our community and contribute. 
