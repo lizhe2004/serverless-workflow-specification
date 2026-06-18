@@ -31,7 +31,7 @@
 
 ## Introduction
 
-The Open Workflow Conformance Test Kit (CTK) is a suite of automated tests designed to ensure that implementations of the Open Workflow specification conform to the standard. The CTK is composed of multiple Gherkin features, each representing various aspects of the Open Workflow DSL.
+The Open Workflow Conformance Test Kit (CTK) is a suite of automated tests designed to ensure that implementations of the Open Workflow Specification conform to the standard. The CTK is composed of multiple Gherkin features, each representing various aspects of the Open Workflow DSL.
 
 Gherkin is a human-readable language used for writing structured tests, which can be understood by both non-technical stakeholders and automated test frameworks. It uses a Given-When-Then syntax to describe the preconditions, actions, and expected outcomes of a test scenario.
 
@@ -41,7 +41,7 @@ The Open Workflow CTK serves two primary purposes: conformance testing and Behav
 
 ### Conformance Testing
 
-Conformance testing is the process of verifying that an implementation adheres to a given specification. By running the CTK, developers can ensure that their implementations of the Open Workflow DSL behave as expected and meet the defined standards. This is crucial for maintaining interoperability and consistency across different implementations of the Open Workflow specification.
+Conformance testing is the process of verifying that an implementation adheres to a given specification. By running the CTK, developers can ensure that their implementations of the Open Workflow DSL behave as expected and meet the defined standards. This is crucial for maintaining interoperability and consistency across different implementations of the Open Workflow Specification.
 
 1. **Clone the Repository**: Start by cloning the Open Workflow CTK repository to your local machine.
    
@@ -53,7 +53,7 @@ git clone https://github.com/serverlessworkflow/specification.git
 
 3. **Run the Tests**: Execute the Gherkin features using your preferred test runner. 
 
-4. **Review Results**: After running the tests, review the results to ensure that your implementation passes all the scenarios. Any failures indicate deviations from the Open Workflow specification.
+4. **Review Results**: After running the tests, review the results to ensure that your implementation passes all the scenarios. Any failures indicate deviations from the Open Workflow Specification.
 
 ### Behavior-Driven Development (BDD)
 

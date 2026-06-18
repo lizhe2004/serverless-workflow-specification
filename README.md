@@ -142,7 +142,7 @@ reference the [Ownership of Copyrights in CNCF Project Contributions](https://gi
 
 ### Governance
 
-The Open Workflow Specification Project Governance [document](governance.md) delineates the roles, procedures, and principles guiding the collaborative development and maintenance of the project. 
+The Open Workflow Specification Project Governance [document](GOVERNANCE.md) delineates the roles, procedures, and principles guiding the collaborative development and maintenance of the project. 
 
 It emphasizes adherence to the CNCF Code of Conduct, defines the responsibilities of maintainers, reviewers, and emeritus maintainers, outlines procedures for their addition and removal, and establishes guidelines for subprojects' inclusion and compliance.
 
@@ -150,7 +150,7 @@ Decision-making processes are consensus-driven, facilitated through structured p
 
 Overall, the document reflects the project's commitment to transparency, accountability, and inclusive collaboration, fostering an environment conducive to sustained growth and innovation.
 
-See the project's Governance Model [here](governance.md).
+See the project's Governance Model [here](GOVERNANCE.md).
 
 ### Code of Conduct
 
@@ -170,7 +170,7 @@ See the project's Code of Conduct [here](code-of-conduct.md).
 
 The Open Workflow Specification team meets weekly, every Thursday at 9AM ET (USA Eastern Time).
 
-To register for meetings please visit the [CNCF Community Calendar](https://tockify.com/cncf.public.events/monthly?search=serverless%20workflow).
+To register for meetings please visit the [CNCF Community Calendar](https://tockify.com/cncf.public.events/monthly?search=open%20workflow).
 
 You can register for individual meetings or for the entire series.
 

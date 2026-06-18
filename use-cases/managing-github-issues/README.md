@@ -259,4 +259,4 @@ do:
 
 ## Conclusion
 
-This use case illustrates the powerful capabilities of Open Workflow in automating complex processes such as GitHub issue management. The workflow is flexible, scalable, and easy to maintain, making it an ideal choice for orchestrating tasks in modern development environments. By leveraging Open Workflow, teams can ensure efficient and consistent handling of issues, improving productivity and achieving better project outcomes.
+This use case illustrates the powerful capabilities of Open Workflow Specification in automating complex processes such as GitHub issue management. The workflow is flexible, scalable, and easy to maintain, making it an ideal choice for orchestrating tasks in modern development environments. By leveraging Open Workflow Specification, teams can ensure efficient and consistent handling of issues, improving productivity and achieving better project outcomes.

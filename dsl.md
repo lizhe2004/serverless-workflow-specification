@@ -372,7 +372,7 @@ Runtime expressions allow for the incorporation of variables, functions, and ope
 
 One key aspect of runtime expressions is their ability to adapt to runtime data and context. This means that expressions can access and manipulate data generated during the execution of a workflow, enabling dynamic decision-making and behavior based on real-time information.
 
-Runtime expressions in Open Workflow can be evaluated using either the default `strict` mode or the `loose` mode. In `strict` mode, all expressions must be properly identified with `${}` syntax. Conversely, in `loose` mode, expressions are evaluated more liberally, allowing for a wider range of input formats. While `strict` mode ensures strict adherence to syntax rules, `loose` mode offers flexibility, allowing evaluation even if the syntax is not perfectly formed.
+Runtime expressions in Open Workflow Specification can be evaluated using either the default `strict` mode or the `loose` mode. In `strict` mode, all expressions must be properly identified with `${}` syntax. Conversely, in `loose` mode, expressions are evaluated more liberally, allowing for a wider range of input formats. While `strict` mode ensures strict adherence to syntax rules, `loose` mode offers flexibility, allowing evaluation even if the syntax is not perfectly formed.
 
 All runtimes **must** support the default runtime expression language, which is [`jq`](https://jqlang.github.io/jq/).
 
@@ -683,15 +683,15 @@ do:
 
 Consider submitting your function to the [Open Workflow Function Catalog](https://github.com/serverlessworkflow/catalog). 
 
-This optional step allows users to discover and utilize your function, enhancing its visibility and usability within the Open Workflow community. By registering your function, you contribute to a shared repository of resources that can streamline workflow development for others.
+This optional step allows users to discover and utilize your function, enhancing its visibility and usability within the Open Workflow Specification community. By registering your function, you contribute to a shared repository of resources that can streamline workflow development for others.
 
 For detailed instructions on how to contribute your custom function, please refer to the [CONTRIBUTING.md](https://github.com/serverlessworkflow/catalog/blob/main/CONTRIBUTING.md) file.
 
 ### Events
 
-Events play a crucial role in Open Workflow by facilitating communication and coordination between different components and services. They enable workflows to react to external stimuli, paving the way for event-driven architectures and real-time processing scenarios. Events are essentially messages that convey information about a specific occurrence or action, allowing workflows to respond dynamically to changes in their environment.
+Events play a crucial role in Open Workflow Specification by facilitating communication and coordination between different components and services. They enable workflows to react to external stimuli, paving the way for event-driven architectures and real-time processing scenarios. Events are essentially messages that convey information about a specific occurrence or action, allowing workflows to respond dynamically to changes in their environment.
 
-Events in Open Workflow adhere to the [CloudEvents specification](https://cloudevents.io/), ensuring interoperability and compatibility with event-driven systems. This standardization allows workflows to seamlessly interact with various event sources and consumers across different platforms and environments.
+Events in Open Workflow Specification adhere to the [CloudEvents specification](https://cloudevents.io/), ensuring interoperability and compatibility with event-driven systems. This standardization allows workflows to seamlessly interact with various event sources and consumers across different platforms and environments.
 
 #### Emitting Events
 
