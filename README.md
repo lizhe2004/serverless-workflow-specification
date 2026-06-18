@@ -3,7 +3,7 @@
 [<img alt="GitHub Release" src="https://img.shields.io/github/v/release/serverlessworkflow/specification?label=Release">](https://github.com/serverlessworkflow/specification/releases/latest)
 <br>
 [<img src="http://img.shields.io/badge/Website-blue?style=flat&logo=google-chrome&logoColor=white">](https://serverlessworkflow.io/) 
-[<img src="http://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white">](https://cloud-native.slack.com/messages/serverless-workflow) 
+[<img src="http://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white">](https://cloud-native.slack.com/messages/open-workflow) 
 [<img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white">](https://www.linkedin.com/company/serverless-workflow/)
 [<img src="https://img.shields.io/twitter/follow/CNCFWorkflow?style=social">](https://twitter.com/CNCFWorkflow)
 
@@ -134,7 +134,7 @@ reference the [Ownership of Copyrights in CNCF Project Contributions](https://gi
   
 ### Communication
 
-- Community Slack Channel: [https://slack.cncf.io/](https://slack.cncf.io/) -  #serverless-workflow
+- Community Slack Channel: [https://slack.cncf.io/](https://slack.cncf.io/) -  #open-workflow
 - [Weekly project meetings](#weekly-meetings)
 - Project Maintainers Email: [cncf-serverlessws-maintainers](mailto:cncf-serverlessws-maintainers@lists.cncf.io)
 - Serverless WG Email: [cncf-wg-serverless](mailto:cncf-wg-serverless@lists.cncf.io)
